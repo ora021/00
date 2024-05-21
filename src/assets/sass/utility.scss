@@ -1,0 +1,125 @@
+.side-bar {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  width: 20%;
+  height: 100vh;
+
+  .links {
+    gap: 10px;
+    a {
+      padding: 25px 20px;
+      border-radius: 16px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      font-size: 18px;
+      text-decoration: none;
+      color: #343434;
+      transition: 0.3s;
+    }
+    a.active,
+    a:hover {
+      background-color: #dcf2f2;
+    }
+  }
+  .user-data {
+    gap: 10px;
+    .img-holder {
+      width: 56px;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+    }
+    p {
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+}
+.layout-content {
+  width: 80%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+
+  .input-container {
+    padding: 30px !important;
+
+    input {
+      all: unset;
+      background-color: #ebebeb;
+      border-radius: 16px;
+      padding: 15px 25px;
+      width: 100%;
+    }
+    button {
+      all: unset;
+      background-color: #dcf2f2;
+      padding: 10px 17px;
+      border-radius: 50%;
+      aspect-ratio: 1/1;
+      cursor: pointer;
+    }
+    .privacy {
+      font-size: 14px;
+      font-weight: 500;
+      color: #575757;
+      .blue {
+        color: #07b3d9;
+      }
+    }
+  }
+  .chat-container {
+    padding: 20px 0;
+    height: 75dvh;
+    overflow-y: scroll;
+    .message {
+      padding: 20px;
+      border-radius: 16px;
+      margin: 20px 0;
+      .img-holder {
+        width: 40px;
+        margin-bottom: 20px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .message.bot {
+      background-color: white;
+    }
+    .message.user {
+      background-color: #dcf2f2;
+    }
+  }
+}
+
+.input-holder {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin: 20px 0;
+  label {
+    font-size: 14px;
+    color: 313131;
+    padding: 3px 5px;
+    background-color: white;
+    position: absolute;
+    left: 10px;
+    top: -30%;
+  }
+  input {
+    all: unset;
+    background-color: white;
+    border: 1px solid #79747e;
+    border-radius: 4px;
+    padding: 10px 5px;
+  }
+}
